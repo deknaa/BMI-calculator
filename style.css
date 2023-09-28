@@ -8,3 +8,57 @@
 /* Import font from google font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 /* Akhir dari Import font */
+
+.wrapper_text {
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+form {
+    margin-top: 2%;
+    margin-left: 40%;
+}
+
+form > input[type="number"] {
+    padding: 15px 200px 15px 5px;
+    border: 1px solid rgb(255, 4, 4);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#btn_hitung {
+    background-color: rgb(80, 80, 238);
+    padding: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#btn_hitung:hover {
+    cursor: pointer;
+    background-color: rgb(65, 65, 194);
+}
+
+#btn_reset {
+    background-color: rgb(251, 6, 6);
+    padding: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#btn_reset:hover {
+    cursor: pointer;
+    background-color: rgb(219, 12, 12);
+}
+
+.batas {
+    margin-bottom: 20px;
+}
+
+#hasil {
+    margin-top: 40px;
+}
