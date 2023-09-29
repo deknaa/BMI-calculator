@@ -29,11 +29,10 @@ calculate = () => {
 
     // Menampilkan hasil dari perhitungan
     let result = document.getElementById("hasil");
-    result.innerHTML = `Your BMI is ${rumus.toFixed(1)} which means you are ${status}`;
+    result.innerHTML = `Your BMI is <b>${rumus.toFixed(1)}</b> which means you are <b>${status}</b>`;
 };
 
 document.getElementById("inputFormBMI").addEventListener("submit", event => {
     event.preventDefault();
-
     calculate();
 });
