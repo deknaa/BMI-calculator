@@ -10,23 +10,26 @@
     <!-- Main -->
     <main>
         <div class="wrapper_text">
-            <h1>Check Your BMI</h1>
+            <h1>Check Your <span>BMI</span></h1>
             <p>Enter your weight and height below to check your BMI Results</p>
         </div>
         <!-- Form -->
-        <form>
+        <form id="inputFormBMI">
             <!-- Input Berat -->
             <label for="weight">Put your weight in here (<b>KG</b>)</label><br>
             <input type="number" name="weight" id="weight" placeholder="Contoh : 60..."><br>
             <!-- Akhir Input Berat -->
-            <div class="batas"></div>
+                <div class="batas"></div>
             <!-- Input Tinggi Badan -->
             <label for="height">And your height in here (<b>CM</b>)</label><br>
             <input type="number" name="height" id="height" placeholder="Contoh : 175...""><br>
-            <button id="btn_hitung">Calculate BMI</button>
-            <button type="reset" id="btn_reset">Reset</button>
-            <p id="hasil">Your BMI is 21.5 which means you are Normal</p>
             <!-- Akhir Input Tinggi Badan -->
+            
+            <!-- Button -->
+            <button type="submit" id="btn_hitung">Calculate BMI</button>
+            <button type="reset" id="btn_reset">Reset</button>
+            <!-- Hasil -->
+            <p id="hasil"></p>
         </form>
         <!-- Akhir Form -->
     </main>

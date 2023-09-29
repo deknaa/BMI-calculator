@@ -6,7 +6,7 @@ calculate = () => {
 
     // Melakukan validasi
     if(isNaN(weight) || isNaN(height)) {
-        return console.log("Tinggi dan Berat harus dalam bentuk angka!");
+        return console.log("Tinggi dan Berat harus di isi dan dalam bentuk angka!");
     }
 
     // Membuat rumus perhitungan BMI
@@ -27,12 +27,20 @@ calculate = () => {
         status = "Status tidak valid!";
     }
 
+    // Menambahkan logic pada button reset
+    document.getElementById("inputFormBMI").addEventListener("reset", function() {
+        document.getElementById("hasil").innerText = '';
+    });
+
     // Menampilkan hasil dari perhitungan
     let result = document.getElementById("hasil");
     result.innerHTML = `Your BMI is <b>${rumus.toFixed(1)}</b> which means you are <b>${status}</b>`;
 };
 
 document.getElementById("inputFormBMI").addEventListener("submit", event => {
-    event.preventDefault();
+    // Mencegah form melakukan refresh
+    event.preventDefault(); 
+
+    // Memanggil function calculate
     calculate();
 });
