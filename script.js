@@ -6,7 +6,7 @@ calculate = () => {
 
     // Melakukan validasi
     if(isNaN(weight) || isNaN(height)) {
-        return console.log("Tinggi dan Berat harus di isi dan dalam bentuk angka!");
+        return alert("Tinggi dan Berat harus di isi dan dalam bentuk angka!");
     }
 
     // Membuat rumus perhitungan BMI
