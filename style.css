@@ -9,9 +9,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 /* Akhir dari Import font */
 
+h1 > span {
+    color: rgb(80, 80, 238);
+}
+
 .wrapper_text {
     margin-left: 40%;
     margin-top: 10%;
+}
+
+.wrapper_text > p {
+    margin-top: 5px;
 }
 
 form {
@@ -20,11 +28,21 @@ form {
 }
 
 form > input[type="number"] {
-    padding: 15px 200px 15px 5px;
-    border: 1px solid rgb(255, 4, 4);
+    padding: 15px 200px 15px 15px;
+    border: 3px solid #C5CFD7;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+    transition: 0.5s;
+}
+
+form > input[type="number"]:focus {
+    border: 3px solid rgb(80, 80, 238);
+    outline: none;
+}
+
+form > input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 #btn_hitung {
@@ -34,6 +52,7 @@ form > input[type="number"] {
     border: none;
     border-radius: 5px;
     margin-top: 10px;
+    transition: 0.5s;
 }
 
 #btn_hitung:hover {
@@ -48,6 +67,7 @@ form > input[type="number"] {
     border: none;
     border-radius: 5px;
     margin-top: 10px;
+    transition: 0.5s;
 }
 
 #btn_reset:hover {
