@@ -18,7 +18,7 @@ Saya adalah seorang mahasiswa yang sedang menempuh pendidikan S1 di Institut Tek
 
 ## Screenshots
 
-![App Screenshot](https://imgur.com/k1qLQc5.png)
+![App Screenshot](https://imgur.com/nFN0Ohf.png)
 
 
 ## Authors
